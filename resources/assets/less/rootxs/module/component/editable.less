@@ -1,0 +1,22 @@
+/**
+ * Overwrite X-editable colors.
+ */
+
+.editable-click, a.editable-click, a.editable-click:hover {
+	border-color: @brand-secondary !important;
+}
+.editable-empty {
+	color: @brand-info !important;
+}
+.has-error {
+	> div {
+		float: left;
+		margin-right: @grid-gutter-width/2;
+	}
+	.form-control {
+		border-color: @brand-danger !important;
+	}
+	.help-block {
+		color: @brand-danger !important;
+	}
+}

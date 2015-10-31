@@ -1,0 +1,22 @@
+a.active {
+	color: @link-hover-color;
+	text-decoration: underline;
+}
+.bg-white {
+	background: @white;
+}
+.no-margin {
+	@media (min-width: @screen-md-min) {
+		margin: 0 !important;
+	}
+}
+.pull-left-xs {
+	@media (max-width: @screen-xs-max) {
+		float: left !important;
+	}
+}
+.pull-right-xs {
+	@media (max-width: @screen-xs-max) {
+		float: right; !important;
+	}
+}

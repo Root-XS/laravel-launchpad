@@ -1,0 +1,120 @@
+/**
+ * Header
+ */
+header {
+	.navbar;
+	.navbar-default;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	margin-bottom: 0;
+	background: @brand-primary;
+	border: none;
+	border-radius: 0 !important;
+	border-bottom: 2px solid @brand-success;
+	color: @white;
+
+	.navbar-header {
+
+		> a {
+			display: inline-block;
+			margin: 5px 0;
+		}
+	}
+	.navbar-nav {
+		> li {
+			&.open {
+				> a, > a:hover, > a:focus {
+					background: @white;
+				}
+				> .dropdown-menu {
+					background: @white;
+				}
+			}
+			> a {
+				&, &:focus {
+					color: @white;
+				}
+				&:hover {
+					color: @gray-light;
+				}
+			}
+		}
+		.dropdown-menu {
+			width: 300px;
+			padding: 10px;
+			border: none;
+		}
+	}
+}
+
+/**
+ * Index parallax
+ */
+body {
+	position: relative;
+
+	> img {
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		min-width: 100%;
+		min-height: 100%;
+	}
+}
+.index-transparent {
+	position: relative;
+	background: none;
+	color: @white;
+	text-shadow: 2px 2px 3px @gray;
+
+	h1 {
+		font-size: 36px;
+	}
+	#index-form-register {
+		min-height: 400px;
+	}
+	.well {
+		text-shadow: none;
+		.well {
+			color: @text-color;
+		}
+	}
+}
+.outer-container {
+	width: 100%;
+	padding: @grid-gutter-width/2 0;
+}
+
+/**
+ * Sticky Footer & header
+ */
+html, body {
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+#body {
+	width: 100%; // not related to footer
+	min-height: 100%;
+	margin-bottom: -100px;
+	padding-top: @navbar-height + 2; // for header
+
+	&:after {
+		display: block;
+		content: "";
+	}
+}
+footer, #body:after {
+	height: 100px;
+}
+footer {
+	clear: both;
+	background: @gray-lighter;
+	text-align: center;
+
+	> .container {
+		padding: 24px 0;
+	}
+}

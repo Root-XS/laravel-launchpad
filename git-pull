@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source /home/ubuntu/.bashrc
+cd /var/www/Foundation
+php artisan cronGitPull $1

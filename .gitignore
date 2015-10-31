@@ -1,0 +1,8 @@
+/storage
+/vendor
+/node_modules
+Homestead.yaml
+.DS_Store
+.env
+.phpintel/*
+*.sublime-*
